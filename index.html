@@ -278,6 +278,8 @@ section{padding-block:clamp(72px,10vw,120px)}
 .tri li{display:flex;gap:9px}
 .tri li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--rust-mid);margin-top:9px}
 @media(max-width:900px){.trio{grid-template-columns:1fr}}
+.trio.four{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.trio.four{grid-template-columns:1fr}}
 .tools{display:flex;flex-wrap:wrap;gap:8px}
 .tools span{font-size:13px;padding:6px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--blush);color:var(--brown)}
 .tools span.csv{border-style:dashed;color:var(--brown-light)}
@@ -586,13 +588,11 @@ fbq('track', 'PageView');
       </div>
     </div>
 
-    <div class="trio">
-      <div class="tri rv"><span class="cmd">/business-dashboard</span><h3>See it all, any time</h3><p>Opens on your laptop and keeps itself up to date. Type any name to see everything about that person.</p>
-        <ul><li>Money in today, this week and this month, and where it came from</li><li>Who owes you, and who to chase first</li><li>Bookings, leads, pipeline, ad spend and cost per lead</li><li>A brief on your phone every morning, and answers any time you ask</li></ul></div>
-      <div class="tri rv"><span class="cmd">/rostering</span><h3>The roster, done</h3><p>Tell it who works when, who's on leave and your rules. It builds the week and tells you what it couldn't fill and why.</p>
-        <ul><li>Works around availability, leave, max hours and breaks</li><li>Estimates the wage bill, with the weekend rates you set</li><li>Swap or cover a shift with a voice note</li><li>Checks the roster against your bookings</li></ul></div>
-      <div class="tri rv"><span class="cmd">/reconciliation</span><h3>Money that adds up</h3><p>Matches payments to invoices, and Stripe and PayPal payouts to your bank statement, then shows you what needs a human.</p>
-        <ul><li>Payouts that never reached the bank</li><li>Deposits nobody can explain</li><li>What your payment tools kept in fees</li><li>Suggests matches for you or your bookkeeper to confirm</li></ul></div>
+    <div class="trio four">
+      <div class="tri rv"><span class="cmd">/business-dashboard</span><h3>See it all, any time</h3><p>Sets up your live dashboard, connects your tools one at a time, and answers any live question: "What came in today?", "Who owes me money?"</p></div>
+      <div class="tri rv"><span class="cmd">/connect</span><h3>Plug Claude into your tools</h3><p>Plugs Claude itself into your tools (email, calendar, CRM, payments), so you can ask it about them in chat too.</p></div>
+      <div class="tri rv"><span class="cmd">/reconciliation</span><h3>Money that adds up</h3><p>Matches the money that came in to your invoices and bank statement, and shows who to chase first.</p></div>
+      <div class="tri rv"><span class="cmd">/rostering</span><h3>The roster, done</h3><p>Builds your staff roster around availability, leave and hours, and checks it against your bookings.</p></div>
     </div>
 
     <div class="rv">
